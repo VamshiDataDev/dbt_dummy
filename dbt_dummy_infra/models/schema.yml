@@ -7,3 +7,17 @@ sources:
 
     tables:
       - name: employees
+
+models:
+  - name: stg_employees
+    description: Cleaned employee data
+
+    columns:
+      - name: emp_id
+        tests:
+          - unique
+          - not_null
+
+      - name: emp_name
+        tests:
+          - not_null
