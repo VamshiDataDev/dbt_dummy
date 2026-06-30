@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: sales_db
+    catalog: demo_catalog
+    schema: sales_db
+
+    tables:
+      - name: employees
